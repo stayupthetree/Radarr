@@ -11,10 +11,10 @@ function MovieDetailsLinks(props) {
     imdbId,
     youTubeTrailerId,
     justwatchUrl,
-	netflixUrl,
-	primeVideoUrl,
-	tubiTVUrl,
-	hooplaUrl
+    netflixUrl,
+    primeVideoUrl,
+    tubiTVUrl,
+    hooplaUrl
   } = props;
 
   return (
@@ -108,7 +108,7 @@ function MovieDetailsLinks(props) {
             </Label>
           </Link>
       }
-  
+
       {
         !!netflixUrl &&
           <Link
