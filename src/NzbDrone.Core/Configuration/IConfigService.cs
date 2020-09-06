@@ -63,6 +63,7 @@ namespace NzbDrone.Core.Configuration
         int ImportListSyncInterval { get; set; }
         string ListSyncLevel { get; set; }
         string ImportExclusions { get; set; }
+        HashSet<int> CleanLibraryTags { get; set; }
 
         //Metadata Provider
         TMDbCountryCode CertificationCountry { get; set; }
