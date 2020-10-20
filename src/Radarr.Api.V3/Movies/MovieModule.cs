@@ -113,9 +113,7 @@ namespace Radarr.Api.V3.Movies
 
                 if (movie != null)
                 {
-                    var translations = _movieTranslationService.GetAllTranslationsForMovie(movie.Id);
-                    var translation = GetMovieTranslation(translations, movie, configLanguage);
-                    moviesResources.AddIfNotNull(movie.ToResource(_qualityUpgradableSpecification, translation, _configService));
+                    moviesResources.AddIfNotNull(MapToResource(movie));
                 }
             }
             else
