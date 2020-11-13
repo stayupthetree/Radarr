@@ -9,7 +9,7 @@ const protocols = [
   { id: 'deleted', name: 'Deleted' }
 ];
 
-function MovieStatusFilterBuilderRowValue(props) {
+function ReleaseStatusFilterBuilderRowValue(props) {
   return (
     <FilterBuilderRowValue
       tagList={protocols}
@@ -18,4 +18,4 @@ function MovieStatusFilterBuilderRowValue(props) {
   );
 }
 
-export default MovieStatusFilterBuilderRowValue;
+export default ReleaseStatusFilterBuilderRowValue;

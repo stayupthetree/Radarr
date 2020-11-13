@@ -235,9 +235,9 @@ export const defaultState = {
   filterBuilderProps: [
     {
       name: 'status',
-      label: 'Status',
+      label: translate('ReleaseStatus'),
       type: filterBuilderTypes.EXACT,
-      valueType: filterBuilderValueTypes.MOVIE_STATUS
+      valueType: filterBuilderValueTypes.RELEASE_STATUS
     },
     {
       name: 'studio',
@@ -316,6 +316,30 @@ export const defaultState = {
 
         return tagList.sort(sortByName);
       }
+    },
+    {
+      name: 'isAvailable',
+      label: translate('IsAvailable'),
+      type: filterBuilderTypes.EXACT,
+      valueType: filterBuilderValueTypes.BOOL
+    },
+    {
+      name: 'isAvailableDate',
+      label: translate('IsAvailableDate'),
+      type: filterBuilderTypes.DATE,
+      valueType: filterBuilderValueTypes.DATE
+    },
+    {
+      name: 'minimumAvailability',
+      label: translate('MinimumAvailability'),
+      type: filterBuilderTypes.EXACT,
+      valueType: filterBuilderValueTypes.MINIMUM_AVAILABILITY
+    },
+    {
+      name: 'minimumAvailabilityDate',
+      label: translate('MinimumAvailabilityDate'),
+      type: filterBuilderTypes.DATE,
+      valueType: filterBuilderValueTypes.DATE
     },
     {
       name: 'ratings',

@@ -224,15 +224,39 @@ export const defaultState = {
       valueType: filterBuilderValueTypes.BOOL
     },
     {
+      name: 'isAvailable',
+      label: translate('IsAvailable'),
+      type: filterBuilderTypes.EXACT,
+      valueType: filterBuilderValueTypes.BOOL
+    },
+    {
+      name: 'isAvailableDate',
+      label: translate('IsAvailableDate'),
+      type: filterBuilderTypes.DATE,
+      valueType: filterBuilderValueTypes.DATE
+    },
+    {
+      name: 'minimumAvailability',
+      label: translate('MinimumAvailability'),
+      type: filterBuilderTypes.EXACT,
+      valueType: filterBuilderValueTypes.MINIMUM_AVAILABILITY
+    },
+    {
+      name: 'minimumAvailabilityDate',
+      label: translate('MinimumAvailablityDate'),
+      type: filterBuilderTypes.DATE,
+      valueType: filterBuilderValueTypes.DATE
+    },
+    {
       name: 'title',
       label: translate('Title'),
       type: filterBuilderTypes.STRING
     },
     {
       name: 'status',
-      label: translate('Status'),
+      label: translate('ReleaseStatus'),
       type: filterBuilderTypes.EXACT,
-      valueType: filterBuilderValueTypes.MOVIE_STATUS
+      valueType: filterBuilderValueTypes.RELEASE_STATUS
     },
     {
       name: 'studio',
